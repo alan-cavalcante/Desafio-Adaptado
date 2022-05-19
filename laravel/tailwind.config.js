@@ -5,7 +5,16 @@ module.exports = {
     "resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'projeto': 'Epilogue',
+      },
+      colors: {
+        'mediumgray': '#696969',
+        'almostblack': '#141414',
+        'almostwhite': '#fafafa',
+      },
+    }
   },
   plugins: [],
 }
