@@ -14,15 +14,16 @@
     <title>Laravel</title>
 </head>
 
-<body class="text-center">
-    <header class="flex justify-between px-10 py-4">
-        <nav class="flex items-center content-start">
-            <div class="flex items-center mr-10">
+<body>
+
+    <header class="flex">
+        <nav class="flex items-center justify-between w-full p-3">
+            <div class="flex items-center min-w-max">
                 <a href="/">
-                    <img src="../img/logo.svg" alt="logo">
+                    <img src="../img/logo.svg" class="object-contain" alt="logo">
                 </a>
             </div>
-            <ul class="flex items-center">
+            <!-- <ul class="flex items-center">
                 <button class="m-4 flex items-baseline font-projeto font-bold text-mediumgray hover:text-almostblack "> Features
                     <img src="../img/icon-arrow-down.svg" alt="arrow" class="ml-1">
                 </button>
@@ -31,32 +32,48 @@
                 </button>
                 <button class="m-4 flex items-center font-projeto font-bold text-mediumgray hover:text-almostblack ">Carreers</button>
                 <button class="m-4 flex items-center font-projeto font-bold text-mediumgray hover:text-almostblack ">About</button>
-            </ul>
+            </ul> -->
+            <div class="flex justify-between items-center" id="auth">
+                <button class=" mx-1 font-projeto text-mediumgray hover:text-almostblack">Login</button>
+                <button class=" mx-1 font-projeto text-mediumgray border border-mediumgray rounded-2xl py-2 px-4 hover:text-almostblack">Register</button>
+            </div>
         </nav>
-        <div class="flex items-center" id="auth">
-            <button class=" font-projeto text-mediumgray p-4 hover:text-almostblack">Login</button>
-            <button class=" font-projeto text-mediumgray border border-mediumgray rounded-2xl py-2 px-4 m-4 hover:text-almostblack">Register</button>
-        </div>
     </header>
-    <main class="flex items-center px-36 py-12 justify-between">
-        <div class="flex flex-col p-2 justify-start bg-red-200 ">
-            <p class="text-left font-bold text-6xl font-projeto text-almostblack">Make remote work</p>
-            <p class=" text-left text-lg font-projeto text-mediumgray ">Get your team in sync, no matter your location.</p>
-            <p class=" text-left text-lg font-projeto text-mediumgray ">Streamline processes, create team rituals, and watch productivity soar.</p>
-            
-            <button class="rounded-xl bg-almostblack text-almostwhite py-2 w-52 mt-8">Learn more</button>
-            
-            <div class="flex items-center justify-between">
-                <img class="mx-2" src="../img/client-databiz.svg" alt="databiz">
-                <img class="mx-2" src="../img/client-audiophile.svg" alt="audiophile">
-                <img class="mx-2" src="../img/client-meet.svg" alt="meet">
-                <img class="mx-2" src="../img/client-maker.svg" alt="maker">
+
+    <main class="flex flex-col h-screen py-4">
+
+        <div class="flex w-full">
+            <img src="../img/image-hero-mobile.png" class=" object-contain " alt="image-hero">
+        </div>
+
+        <div class="flex flex-col items-center">
+
+            <div class="flex flex-col w-full p-3 ">
+                <div class="text-center">
+                    <p class="text-center font-bold text-4xl my-3 font-projeto text-almostblack">Make remote work</p>
+                    <p class="text-center text-md font-projeto text-mediumgray">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+
+                    <button class="rounded-2xl bg-almostblack mb-8 font-bold text-almostwhite p-3 w-32 mt-8">Learn more</button>
+                </div>
+
+                <div class="flex items-center justify-between w-full ">
+                    <div>
+                        <img class="p-3 object-contain" src="../img/client-databiz.svg" alt="databiz">
+                    </div>
+                    <div>
+                        <img class="p-3 object-contain" src="../img/client-audiophile.svg" alt="audiophile">
+                    </div>
+                    <div>
+                        <img class="p-3 object-contain" src="../img/client-meet.svg" alt="meet">
+                    </div>
+                    <div>
+                        <img class="p-3 object-contain" src="../img/client-maker.svg" alt="maker">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="p-2">
-            <img src="../img/image-hero-desktop.png" alt="image-hero">
-        </div>
     </main>
+    <!-- <footer class="bg-slate-800 h-auto w-full">a</footer> -->
 </body>
 
 </html>
