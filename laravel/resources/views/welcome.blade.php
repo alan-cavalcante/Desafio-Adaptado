@@ -12,30 +12,47 @@
     <link href="../css/app.css" rel="stylesheet">
 
     <title>Laravel</title>
+
+    <script>
+        function abrirHamburger() {
+            let x = document.getElementById("linksNav")
+
+        }
+    </script>
 </head>
 
 <body>
 
     <header class="flex">
-        <nav class="flex items-center justify-between w-full p-3">
-            <div class="flex items-center min-w-max">
+        <nav class="flex justify-between w-full p-3">
+            <div class="flex items-center min-w-max m-2 sm:mx-4">
                 <a href="/">
                     <img src="../img/logo.svg" class="object-contain" alt="logo">
                 </a>
             </div>
-            <!-- <ul class="flex items-center">
-                <button class="m-4 flex items-baseline font-projeto font-bold text-mediumgray hover:text-almostblack "> Features
-                    <img src="../img/icon-arrow-down.svg" alt="arrow" class="ml-1">
-                </button>
-                <button class="m-4 flex items-baseline font-projeto font-bold text-mediumgray hover:text-almostblack ">Company
-                    <img src="../img/icon-arrow-down.svg" alt="arrow" class="ml-1">
-                </button>
-                <button class="m-4 flex items-center font-projeto font-bold text-mediumgray hover:text-almostblack ">Carreers</button>
-                <button class="m-4 flex items-center font-projeto font-bold text-mediumgray hover:text-almostblack ">About</button>
-            </ul> -->
-            <div class="flex justify-between items-center" id="auth">
-                <button class=" mx-1 font-projeto text-mediumgray hover:text-almostblack">Login</button>
-                <button class=" mx-1 font-projeto text-mediumgray border border-mediumgray rounded-2xl py-2 px-4 hover:text-almostblack">Register</button>
+            <div class=" bg-white absolute right-0 top-0 flex flex-col h-full p-4 w-2/3 items-end" id="linksNav">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" onclick="abrirHamburger()" class="w-10 mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg> -->
+                <svg xmlns="http://www.w3.org/2000/svg" onclick="abrirHamburger()" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+
+                <ul class="self-start flex flex-col">
+                    <button class="m-1 my-3 flex items-baseline font-projeto font-bold text-mediumgray hover:text-almostblack "> Features
+                        <img src="../img/icon-arrow-down.svg" alt="arrow" class="ml-4">
+                    </button>
+                    <button class="m-1 my-3 flex items-baseline font-projeto font-bold text-mediumgray hover:text-almostblack ">Company
+                        <img src="../img/icon-arrow-down.svg" alt="arrow" class="ml-4">
+                    </button>
+                    <button class="m-1 my-3 flex items-center font-projeto font-bold text-mediumgray hover:text-almostblack ">Carreers</button>
+                    <button class="m-1 my-3 flex items-center font-projeto font-bold text-mediumgray hover:text-almostblack ">About</button>
+                </ul>
+
+                <div class=" flex flex-col w-full p-8" id="auth">
+                    <button class="font-projeto text-mediumgray text-sm hover:text-almostblack">Login</button>
+                    <button class="font-projeto text-mediumgray border border-mediumgray rounded-xl py-2 px-4 mt-4 text-sm hover:text-almostblack">Register</button>
+                </div>
             </div>
         </nav>
     </header>
@@ -50,10 +67,11 @@
 
             <div class="flex flex-col w-full p-3 ">
                 <div class="text-center">
-                    <p class="text-center font-bold text-4xl my-3 font-projeto text-almostblack">Make remote work</p>
+                    <p class="text-center font-bold text-4xl my-4 font-projeto text-almostblack">Make remote work</p>
                     <p class="text-center text-md font-projeto text-mediumgray">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
 
-                    <button class="rounded-2xl bg-almostblack mb-8 font-bold text-almostwhite p-3 w-32 mt-8">Learn more</button>
+                    <button class="rounded-2xl border bg-almostblack mb-8 font-bold text-almostwhite p-3 w-32 mt-8
+                    hover:bg-almostwhite hover:text-almostblack hover:border hover:border-almostblack">Learn more</button>
                 </div>
 
                 <div class="flex items-center justify-between w-full ">

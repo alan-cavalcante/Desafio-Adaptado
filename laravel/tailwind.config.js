@@ -14,6 +14,10 @@ module.exports = {
         'almostblack': '#141414',
         'almostwhite': '#fafafa',
       },
+      screens: {
+        'mobile1':'375px',
+        'desktop1': '1440px',
+      }
     }
   },
   plugins: [],
