@@ -16,7 +16,17 @@
     <script>
         function abrirHamburger() {
             let x = document.getElementById("linksNav")
-
+            for (let i = 0; i <= x.classList.length; i++) {
+                // console.log(x.classList[i])
+                if (x.classList[i] == "hidden") {
+                    x.classList.remove("hidden")
+                    x.classList.add("flex")
+                    // console.log(items)
+                } else if (x.classList[i] == "flex")  {
+                    x.classList.remove("flex")
+                    x.classList.add("hidden")
+                }
+            }
         }
     </script>
 </head>
@@ -30,13 +40,12 @@
                     <img src="../img/logo.svg" class="object-contain" alt="logo">
                 </a>
             </div>
-            <div class=" bg-white absolute right-0 top-0 flex flex-col h-full p-4 w-2/3 items-end" id="linksNav">
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" onclick="abrirHamburger()" class="w-10 mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg> -->
-                <svg xmlns="http://www.w3.org/2000/svg" onclick="abrirHamburger()" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" onclick="abrirHamburger()" class="h-6 w-6 z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+            
+            <div class=" bg-white absolute right-0 top-0 flex-col h-full p-4 w-2/3 items-end hidden" id="linksNav">
 
                 <ul class="self-start flex flex-col">
                     <button class="m-1 my-3 flex items-baseline font-projeto font-bold text-mediumgray hover:text-almostblack "> Features
