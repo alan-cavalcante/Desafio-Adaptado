@@ -17,11 +17,10 @@
         function abrirHamburger() {
             let x = document.getElementById("linksNav")
             for (let i = 0; i <= x.classList.length; i++) {
-                // console.log(x.classList[i])
                 if (x.classList[i] == "hidden") {
                     x.classList.remove("hidden")
                     x.classList.add("flex")
-                    // console.log(items)
+                    
                 } else if (x.classList[i] == "flex")  {
                     x.classList.remove("flex")
                     x.classList.add("hidden")
