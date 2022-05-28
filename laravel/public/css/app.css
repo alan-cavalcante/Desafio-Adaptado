@@ -450,8 +450,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.mb-6 {
-  margin-bottom: 1.5rem;
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .ml-4 {
   margin-left: 1rem;
@@ -465,17 +470,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-8 {
   margin-top: 2rem;
 }
+.ml-2 {
+  margin-left: 0.5rem;
+}
 .flex {
   display: flex;
 }
 .hidden {
   display: none;
 }
-.h-full {
-  height: 100%;
-}
 .h-6 {
   height: 1.5rem;
+}
+.h-full {
+  height: 100%;
 }
 .h-screen {
   height: 100vh;
@@ -486,14 +494,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-full {
   width: 100%;
 }
-.w-2\/3 {
-  width: 66.666667%;
-}
-.w-10 {
-  width: 2.5rem;
-}
 .w-6 {
   width: 1.5rem;
+}
+.w-2\/3 {
+  width: 66.666667%;
 }
 .w-32 {
   width: 8rem;
@@ -506,6 +511,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex-col {
   flex-direction: column;
 }
+.items-start {
+  align-items: flex-start;
+}
 .items-end {
   align-items: flex-end;
 }
@@ -514,6 +522,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .items-baseline {
   align-items: baseline;
+}
+.justify-start {
+  justify-content: flex-start;
 }
 .justify-between {
   justify-content: space-between;
@@ -571,8 +582,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.pl-2 {
+  padding-left: 0.5rem;
+}
+.text-left {
+  text-align: left;
+}
 .text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 .font-projeto {
   font-family: Epilogue;

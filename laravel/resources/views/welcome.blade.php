@@ -16,16 +16,26 @@
     <script>
         function abrirHamburger() {
             let x = document.getElementById("linksNav")
-            for (let i = 0; i <= x.classList.length; i++) {
-                if (x.classList[i] == "hidden") {
-                    x.classList.remove("hidden")
-                    x.classList.add("flex")
-                    
-                } else if (x.classList[i] == "flex")  {
-                    x.classList.remove("flex")
-                    x.classList.add("hidden")
-                }
-            }
+            x.classList.toggle('hidden');
+            // for (let i = 0; i <= x.classList.length; i++) {
+            //     if (x.classList[i] == "hidden") {
+            //         x.classList.remove("hidden")
+            //         x.classList.add("flex")
+
+            //     } else if (x.classList[i] == "flex")  {
+            //         x.classList.remove("flex")
+            //         x.classList.add("hidden")
+            //     }
+            // }
+        }
+
+        function abrirFeatures() {
+            let y = document.getElementById("features")
+            y.classList.toggle('hidden')
+        }
+        function abrirCompany() {
+            let z = document.getElementById("company")
+            z.classList.toggle('hidden')
         }
     </script>
 </head>
@@ -39,21 +49,51 @@
                     <img src="../img/logo.svg" class="object-contain" alt="logo">
                 </a>
             </div>
-            
+
             <svg xmlns="http://www.w3.org/2000/svg" onclick="abrirHamburger()" class="h-6 w-6 z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
-            
+
             <div class=" bg-white absolute right-0 top-0 flex-col h-full p-4 w-2/3 items-end hidden" id="linksNav">
 
                 <ul class="self-start flex flex-col">
-                    <button class="m-1 my-3 flex items-baseline font-projeto font-bold text-mediumgray hover:text-almostblack "> Features
+                    <button class="m-1 my-3 flex items-baseline font-projeto font-bold text-mediumgray hover:text-almostblack" onclick="abrirFeatures()"> Features
                         <img src="../img/icon-arrow-down.svg" alt="arrow" class="ml-4">
                     </button>
-                    <button class="m-1 my-3 flex items-baseline font-projeto font-bold text-mediumgray hover:text-almostblack ">Company
+                    <div id="features" class="hidden">
+                        <button class="m-1 my-3 pl-2 flex items-start font-projeto text-mediumgray hover:text-almostblack ">
+                            <img src="../img/icon-todo.svg" class="mx-2" alt="todo list" class="ml-4">
+                            Todo List
+                        </button>
+                        <button class="m-1 my-3 pl-2 flex items-start font-projeto text-mediumgray hover:text-almostblack ">
+                            <img src="../img/icon-calendar.svg" class="mx-2" alt="calendar" class="ml-4">Calendar
+                        </button>
+                        <button class="m-1 my-3 pl-2 flex items-start font-projeto text-mediumgray hover:text-almostblack ">
+                            <img src="../img/icon-reminders.svg" class="mx-2" alt="reminders" class="ml-4">Reminders
+                        </button>
+                        <button class="m-1 my-3 pl-2 flex items-start font-projeto text-mediumgray hover:text-almostblack ">
+                            <img src="../img/icon-planning.svg" class="mx-2" alt="planning" class="ml-4">Planning
+                        </button>
+                    </div>
+
+                    <button class="m-1 my-3 flex items-baseline font-projeto font-bold text-mediumgray hover:text-almostblack" onclick="abrirCompany()">Company
                         <img src="../img/icon-arrow-down.svg" alt="arrow" class="ml-4">
                     </button>
+
+                    <div id="company" class="hidden">
+                        <button class=" pl-2 m-1 my-3 ml-2 flex items-start font-projeto text-mediumgray hover:text-almostblack ">
+                            History
+                        </button>
+                        <button class=" pl-2 m-1 my-3 ml-2 flex items-start font-projeto text-mediumgray hover:text-almostblack ">
+                            Our Team
+                        </button>
+                        <button class=" pl-2 m-1 my-3 ml-2 flex items-start font-projeto text-mediumgray hover:text-almostblack ">
+                            Blog
+                        </button>
+                    </div>
+
                     <button class="m-1 my-3 flex items-center font-projeto font-bold text-mediumgray hover:text-almostblack ">Carreers</button>
+
                     <button class="m-1 my-3 flex items-center font-projeto font-bold text-mediumgray hover:text-almostblack ">About</button>
                 </ul>
 
