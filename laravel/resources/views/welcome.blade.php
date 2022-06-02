@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class=" m-0 p-0 min-w-full w-full max-w-full min-h-full h-full max-h-full ">
 
 <head>
     <meta charset="utf-8">
@@ -26,7 +26,7 @@
             let up = "../img/icon-arrow-up.svg"
             if (yy.attributes[0].value == down) {
                 yy.attributes[0].value = up
-            } else if(yy.attributes[0].value == up) {
+            } else if (yy.attributes[0].value == up) {
                 yy.attributes[0].value = down
             }
             y.classList.toggle('hidden')
@@ -39,7 +39,7 @@
             let up = "../img/icon-arrow-up.svg"
             if (zz.attributes[0].value == down) {
                 zz.attributes[0].value = up
-            } else if(zz.attributes[0].value == up) {
+            } else if (zz.attributes[0].value == up) {
                 zz.attributes[0].value = down
             }
 
@@ -48,7 +48,7 @@
     </script>
 </head>
 
-<body>
+<body class=" m-0 p-0 min-w-full w-full max-w-full min-h-full h-full max-h-full ">
     <!-- HEADER NAV & LOGIN -->
     <header class="flex">
         <nav class="flex justify-between w-full p-3">
@@ -68,9 +68,9 @@
 
                 <ul class="flex flex-col mt-10 md:flex-row md:mt-0 ">
                     <button class="m-1 my-3 flex items-baseline font-projeto font-bold text-mediumgray hover:text-almostblack md:ml-4" onclick="abrirFeatures()"> Features
-                        <img src="../img/icon-arrow-down.svg" alt="arrow" class="ml-4 md:ml-2" id="setaFeatures" >
+                        <img src="../img/icon-arrow-down.svg" alt="arrow" class="ml-4 md:ml-2" id="setaFeatures">
                     </button>
-                    
+
                     <!-- JANELA FEATURES -->
                     <div id="features" class="hidden bg-almostwhite 
                     md:absolute md:top-20 md:left-36 md:rounded-lg md:bg-white md:drop-shadow-2xl md:p-2 md:border-2 md:border-almostwhite ">
@@ -111,7 +111,7 @@
                     <button class="m-1 my-3 flex items-baseline font-projeto font-bold text-mediumgray hover:text-almostblack md:ml-4" onclick="abrirCompany()">Company
                         <img src="../img/icon-arrow-down.svg" alt="arrow" id="setaCompany" class="ml-4 md:ml-2">
                     </button>
-                    
+
                     <!-- JANELA COMPANY -->
                     <div id="company" class="hidden bg-almostwhite
                     md:absolute md:top-20 md:left-80 md:rounded-lg md:bg-white md:drop-shadow-2xl md:p-2 md:border-2 md:border-almostwhite">
@@ -134,7 +134,6 @@
                 </ul>
 
                 <!-- REGISTRO E LOGIN -->
-
                 <div class=" flex flex-col w-full p-8 md:flex-row 
                 md:w-max md:p-2 " id="auth">
                     <button class="font-projeto text-mediumgray text-sm hover:text-almostblack">Login</button>
@@ -146,25 +145,32 @@
     </header>
     <!-- / HEADER NAV & LOGIN -->
 
-    <main class="  flex flex-col h-screen py-4
-    md:flex-row">
-
-        <div class="flex w-full">
-            <img src="../img/image-hero-mobile.png" class=" object-contain " alt="image-hero">
+    <main class="flex flex-col w-full h-auto
+    md:flex-row-reverse md:px-44 md:items-center md:justify-center">
+        <!-- IMAGE -->
+        <div class="flex md:w-1/2 md:items-start md:max-w-3xl  ">
+            <img src="../img/image-hero-desktop.png" class="object-contain h-full hidden md:block" alt="image-hero">
+            <img src="../img/image-hero-mobile.png" class="object-contain md:hidden " alt="image-hero">
         </div>
+        <div class="hidden w-20 md:block"></div>
+        <div class="flex flex-col items-center md:w-1/2 md:max-w-3xl ">
 
-        <div class="flex flex-col items-center">
+            <div class="flex flex-col w-full p-3 md:h-full ">
+                <div class="text-center 
+                md:flex md:flex-col md:text-left md:h-full md:justify-center ">
 
-            <div class="flex flex-col w-full p-3 ">
-                <div class="text-center">
-                    <p class="text-center font-bold text-4xl my-4 font-projeto text-almostblack">Make remote work</p>
-                    <p class="text-center text-md font-projeto text-mediumgray">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+                    <p class="text-center font-bold text-4xl md:text-7xl my-4 font-projeto text-almostblack
+                    md:text-left">Make <br class="hidden md:block"> remote work</p>
+
+                    <p class="text-center text-md font-projeto text-mediumgray
+                    md:text-left">Get your team in sync, no matter your location. <br class="hidden md:block"> Streamline processes, create team rituals, and watch productivity soar.</p>
 
                     <button class="rounded-2xl border bg-almostblack mb-8 font-bold text-almostwhite p-3 w-32 mt-8
                     hover:bg-almostwhite hover:text-almostblack hover:border hover:border-almostblack">Learn more</button>
                 </div>
-
-                <div class="flex items-center justify-between w-full ">
+                
+                <!-- CLIENTES -->
+                <div class="flex items-center justify-between w-full md:justify-start">
                     <div>
                         <img class="p-3 object-contain" src="../img/client-databiz.svg" alt="databiz">
                     </div>
