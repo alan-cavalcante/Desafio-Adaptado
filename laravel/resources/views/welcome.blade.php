@@ -13,37 +13,38 @@
 
     <title>Laravel</title>
 
+    <!-- JavaScript -->
     <script>
         function abrirHamburger() {
-            let x = document.getElementById("linksNav")
-            x.classList.toggle('hidden');
+            let linksnav = document.getElementById("linksNav")
+            linksnav.classList.toggle('hidden');
         }
 
         function abrirFeatures() {
-            let y = document.getElementById("features")
-            let yy = document.getElementById("setaFeatures")
+            let features = document.getElementById("features")
+            let setasf = document.getElementById("setaFeatures")
             let down = "../img/icon-arrow-down.svg"
             let up = "../img/icon-arrow-up.svg"
-            if (yy.attributes[0].value == down) {
-                yy.attributes[0].value = up
-            } else if (yy.attributes[0].value == up) {
-                yy.attributes[0].value = down
+            if (setasf.attributes[0].value == down) {
+                setasf.attributes[0].value = up
+            } else if (setasf.attributes[0].value == up) {
+                setasf.attributes[0].value = down
             }
-            y.classList.toggle('hidden')
+            features.classList.toggle('hidden')
         }
 
         function abrirCompany() {
-            let z = document.getElementById("company")
-            let zz = document.getElementById("setaCompany")
+            let company = document.getElementById("company")
+            let setasc = document.getElementById("setaCompany")
             let down = "../img/icon-arrow-down.svg"
             let up = "../img/icon-arrow-up.svg"
-            if (zz.attributes[0].value == down) {
-                zz.attributes[0].value = up
-            } else if (zz.attributes[0].value == up) {
-                zz.attributes[0].value = down
+            if (setasc.attributes[0].value == down) {
+                setasc.attributes[0].value = up
+            } else if (setasc.attributes[0].value == up) {
+                setasc.attributes[0].value = down
             }
 
-            z.classList.toggle('hidden')
+            company.classList.toggle('hidden')
         }
     </script>
 </head>
@@ -168,7 +169,7 @@
                     <button class="rounded-2xl border bg-almostblack mb-8 font-bold text-almostwhite p-3 w-32 mt-8
                     hover:bg-almostwhite hover:text-almostblack hover:border hover:border-almostblack">Learn more</button>
                 </div>
-                
+
                 <!-- CLIENTES -->
                 <div class="flex items-center justify-between w-full md:justify-start">
                     <div>
