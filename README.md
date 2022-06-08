@@ -1,6 +1,9 @@
 # Frontend Mentor - Intro section with dropdown navigation solution
 
 Esta é a solução para o [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). 
+Mas após eu concluir o desafio, resolvi incrementar o projeto com finalidade apenas de treinar PHP com Laravel. 
+Pretendo inserir um sistema de Autenticação com Login/Senha e uma integração com banco de dados.
+Aos poucos vou adicionando funcionalidades de acordo com meus estudos.
 
 ## Table of contents
 
@@ -22,14 +25,14 @@ Esta é a solução para o [Intro section with dropdown navigation challenge on 
 
 Usuários devem:
 
-- View the relevant dropdown menus on desktop and mobile when interacting with the navigation links
-- View the optimal layout for the content depending on their device's screen size
-- See hover states for all interactive elements on the page
+- Ver menus dropdown na versão Desktop e Mobile quando interagindo com os menus de navegação.
+- Ver o layout otimizado para o conteúdo dependendo do tamanho da tela.
+- Ver efeitos onhover em todos os elementos interativos da página.
 
 ### Screenshot
 
+ADICIONAREI SCREENSHOTS E LINKS DO PROJETO QUANDO FINALIZAR.
 ![](./screenshot.jpg)
-
 
 ### Links
 
@@ -41,13 +44,10 @@ Usuários devem:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- TailwindCSS
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [Laravel](https://laravel.com/) - PHP Framework
 
 
 ### What I learned
@@ -55,20 +55,17 @@ Usuários devem:
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+<!-- Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect. -->
 
 ### Useful resources
-
+<!-- 
 - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
+- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept. -->
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@alan-cavalcante](https://www.frontendmentor.io/profile/alan-cavalcante)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+<!-- This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit. -->
